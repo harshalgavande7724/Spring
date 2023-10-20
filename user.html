@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vaccination Web Project</title>
+    <link rel="stylesheet" href="your-css-file.css">
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+          }
+          
+          .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          }
+          
+          h1 {
+            text-align: center;
+            color: #333;
+          }
+          
+          form {
+            margin-top: 20px;
+          }
+          
+          input[type="text"],
+          input[type="password"],
+          input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          
+          button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          button:hover {
+            background-color: #45a049;
+          }
+          
+          
+    </style>
+    
+    <!-- Form to add user details -->
+    <form action="/user" method="POST">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required><br><br>
+        
+        <label for="idType">ID Type:</label>
+        <input type="text" id="idType" name="idType" required><br><br>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" name="contactNumber" required><br><br>
+        
+        <label for="vaccineName">Vaccine Name:</label>
+        <select id="vaccineName" name="vaccineName" required>
+            <option value="covaxin">Covaxin</option>
+            <option value="covishield">Covishield</option>
+            <option value="sputnik">Sputnik</option>
+        </select><br><br>
+        
+        <input type="submit" value="Add User">
+
+
+        <label for="UserDetails">Details Name:</label>
+        <select id="DetailsName" name="DetailsName" required>
+            <option value="Aadhar card ">Aadhar Number</option>
+            <option value="Voter ID">Voter Id Number </option>
+            <option value="Pan Card">Pan Card Number</option>
+        </select><br><br>
+        
+        <input type="submit" value="User Details">
+
+    </form>
+</body>
+</html>
+
+    
